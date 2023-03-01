@@ -1,0 +1,50 @@
+body {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    flex-basis: 240px;
+    margin: .5rem;
+    min-width: 240px;
+    max-width: calc(33% - 1rem);
+    border-radius: 8px;
+    border-color: black;
+    box-sizing: border-box;
+    border: 1px solid rgba(158, 157, 157, 0.877);
+    padding: 2px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+}
+.heading {
+    text-align: center;
+    border-bottom: 1px solid rgba(158, 157, 157, 0.877);
+}
+.add-content {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(158, 157, 157, 0.877);
+}
+.add-content.separate {
+    margin: 2px;
+}
+
+.todo-content {
+    border-bottom: 1px solid rgba(158, 157, 157, 0.877);
+    text-align: center;
+}
+.todo-limit {
+    text-align: center;
+}
+
+.update-button {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(158, 157, 157, 0.877);
+}
