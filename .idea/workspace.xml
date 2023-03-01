@@ -5,11 +5,639 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="609b8318-b87f-490d-8131-79ae23b9c6ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/clojure_rum_start/client/client.cljs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clojure_rum_start/part/todoForm.cljs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clojure_rum_start/part/todoItem.cljs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clojure_rum_start/util/parser.cljs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cider.piggieback.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/citrus.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/citrus.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/citrus.resolver.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs-test-display.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.analyzer.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.analyzer.utils.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.build.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.cli.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.closure.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.compiler.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.compiler.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.core.async.impl.ioc-macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.core.async.interop.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.core.async.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.core.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.core.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.core.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.env.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.externs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.instant.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.js.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.main.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.reader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.repl.bootstrap.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.repl.browser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.repl.node.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.repl.reflect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.repl.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.server.browser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.server.node.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.source-map.base64-vlq.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.source-map.base64.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.source-map.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.tools.reader.reader-types.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.data.json.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.default-data-readers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.edn.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.impl.commons.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.impl.errors.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.impl.inspect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.impl.utils.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.reader-types.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.clojure.tools.reader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cljs.vendor.cognitect.transit.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.buffers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.channels.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.concurrent.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.dispatch.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.exec.threadpool.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.ioc-macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.mutex.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.impl.timers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.lab.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.cache.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.cache.wrapped.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.memoize.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.reducers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.debug-platform-dependent.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.debug.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.fork-join.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.nodes.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.parameters.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.rrbt.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.transients.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.rrb-vector.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.specs.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.data.json.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.data.priority-map.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.data.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.datafy.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.edn.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.inspector.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.instant.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.java.browse-ui.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.java.browse.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.java.io.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.java.javadoc.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.java.shell.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.main.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.math.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.parallel.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.pprint.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.reflect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.set.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.spec.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.spec.gen.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.spec.test.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.stacktrace.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.string.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.template.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.test.junit.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.test.tap.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.ast.query.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.ast.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.jvm.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.jvm.utils.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.add-binding-atom.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.cleanup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.collect-closed-overs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.constant-lifter.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.elide-meta.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.emit-form.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.index-vector-nodes.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.analyze-host-expr.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.annotate-branch.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.annotate-host-info.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.annotate-loops.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.annotate-tag.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.box.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.classify-invoke.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.constant-lifter.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.emit-form.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.fix-case-test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.infer-tag.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.validate-loop-locals.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.validate-recur.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.validate.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.jvm.warn-on-reflection.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.source-info.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.trim.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.uniquify.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.passes.warn-earmuff.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.analyzer.utils.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.dependency.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.dir.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.file.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.find.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.move.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.parse.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.reload.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.track.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.namespace.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.default-data-readers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.edn.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.impl.commons.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.impl.errors.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.impl.inspect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.impl.utils.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.reader-types.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.tools.reader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.uuid.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.walk.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.xml.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/clojure.zip.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/cognitect.transit.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/crypto.equality.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/crypto.random.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/daiquiri.compiler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/daiquiri.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.compiler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.defaults.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.formatters.markup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.munging.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.oops.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.prefs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.toolbox.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/devtools.version.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/env-config.impl.logging.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/env-config.impl.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/env-config.impl.platform.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/fipp.ednize.instant.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/fipp.ednize.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/fipp.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.compiler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.def.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.element.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.form.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.middleware.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.page.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/hiccup.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.ack.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.bencode.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.cmdline.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.config.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.helpers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.caught.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.completion.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.dynamic-loader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.interruptible-eval.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.load-file.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.lookup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.print.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.session.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.sideloader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.middleware.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.misc.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.socket.dynamic.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.socket.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.transport.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.util.completion.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.util.lookup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.util.print.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/nrepl.version.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/om.checksums.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/om.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/om.next.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.core.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.content-type.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.cookies.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.file-info.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.file.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.flash.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.head.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.keyword-params.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.multipart-params.byte-array.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.multipart-params.temp-file.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.multipart-params.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.nested-params.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.not-modified.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.params.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.resource.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.session.cookie.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.session.memory.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.session.store.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.middleware.session.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.codec.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.io.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.mime-type.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.parsing.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.request.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.response.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/ring.util.time.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/rum.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/rum.cursor.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/rum.server-render.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/sablono.compiler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/sablono.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.babel.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.cache.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.classpath.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.cljs-bridge.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.closure.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.compiler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.config.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.data.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.js-support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.json-order-preserving.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.log.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.modules.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.node.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.npm.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.ns-form.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.output.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.resolve.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.resource.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.azure-app.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.bootstrap.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.browser-test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.browser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.chrome-extension.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.esm.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.expo.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.external-index.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.graaljs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.karma.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.node-library.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.node-script.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.node-test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.npm-module.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.react-native.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.shared.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.targets.single-file.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.test-util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.build.warnings.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.build-report.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.cli.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.cli-actual.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.cli.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.cljs-specs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.config.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.errors.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.plugin-manager.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.build-history.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.cli-check.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.common.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.config-watch.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.dev-http.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.fs-watch.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.npm-deps.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.nrepl-impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.nrepl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.nrepl04.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.ns-explorer.impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.ns-explorer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.prepl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.relay-tcp.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.reload-classpath.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.reload-npm.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.remote-ext.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.repl-impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.ring-gzip.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.runtime.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.socket-repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.supervisor.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.system-bus.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.web.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.web.common.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.web.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.worker.impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.devtools.server.worker.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.graaljs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cljs.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.core-ext.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.cursive-repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.debug.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.html.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.http.push-state.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.http.router.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.insight.parser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.insight.plugin.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.insight.remote-ext.clj.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.insight.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.insight.web.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.jvm-log.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.lazy.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.macros.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.markup.css.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.markup.hiccup.impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.markup.hiccup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.markup.react.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.nrepl-debug.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.react.component.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.remote.relay.local.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.remote.relay.simple-query.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.remote.runtime.clj.local.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.remote.runtime.eval-support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.remote.runtime.explore-support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.remote.runtime.writer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.resource.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.runtime.services.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.server.assets.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.test.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.test.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.undertow.impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.undertow.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/shadow.ws-test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/clj/user.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.analyzer.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.analyzer.impl.namespaces.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.analyzer.impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.analyzer.passes.and-or.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.analyzer.passes.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.analyzer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.compiler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.core.specs.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.js-deps.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.module-graph.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.pprint.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.spec.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.spec.gen.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.spec.test.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.stacktrace.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.tagged-literals.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/cljs.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/clojure.tools.cli.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/daiquiri.normalize.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/daiquiri.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.impl.coerce.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.impl.coercers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.impl.helpers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.impl.read.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.impl.report.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.impl.types.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/env-config.version.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.ansi.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.paths.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.printer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.problems.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.specs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/expound.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/fipp.clojure.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/fipp.deque.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/fipp.edn.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/fipp.engine.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/fipp.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/fipp.visit.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/no.en.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.dom.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.next.impl.parser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.next.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.next.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.tempid.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.transit.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/om.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/rum.derived-atom.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/rum.lazy-loader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/rum.specs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/rum.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/sablono.interpreter.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/sablono.normalize.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/sablono.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.build.cljs-hacks.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.cli-util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.cljs.config-env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.cljs.devtools.cli-opts.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.cljs.model.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.cljs.modern.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.insight.remote-ext.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.insight.runtime.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.markup.css.impl.gen.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.remote.relay.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.remote.runtime.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.remote.runtime.obj-support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.remote.runtime.shared.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.remote.runtime.tap-support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/shadow.spec.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljc/user.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/citrus.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/citrus.cursor.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/citrus.reconciler.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs-http.client.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs-http.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs-http.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs-test-display.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs-test-display.favicon.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs-test-display.notify.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.impl.buffers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.impl.channels.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.impl.dispatch.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.impl.ioc-helpers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.impl.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.impl.timers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.interop.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.js.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.loader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.math.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.nodejs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.pprint.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.reader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.source-map.base64-vlq.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.source-map.base64.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.source-map.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.spec.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.spec.gen.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.spec.test.alpha.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.edn.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.impl.commons.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.impl.errors.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.impl.inspect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.impl.utils.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.reader-types.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cljs.tools.reader.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure-rum-start.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.browser.dom.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.browser.event.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.browser.net.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.browser.repl.preload.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.browser.repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.reducers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.debug-platform-dependent.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.debug.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.nodes.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.rrbt.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.transients.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.core.rrb-vector.trees.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.data.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.datafy.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.edn.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.reflect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.set.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.string.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.walk.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/clojure.zip.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/cognitect.transit.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/daiquiri.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/daiquiri.interpreter.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.context.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.defaults.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.format.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.budgeting.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.helpers.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.markup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.printing.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.state.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.templating.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.formatters.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.hints.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.munging.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.prefs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.protocols.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.reporter.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.toolbox.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/devtools.version.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/env-config.impl.logging.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/env-config.impl.platform.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/fipp.ednize.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/om.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/om.dom.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/om.impl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/om.next.cache.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/process.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/rum.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/rum.cursor.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/sablono.core.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/sablono.server.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.animate.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.api.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.async.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.bootstrap.browser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.bootstrap.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.bootstrap.node.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.build-report.ui.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.browser-repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.browser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.console.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.hud.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.node-repl.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.node.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.react-native.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.shared.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.devtools.client.websocket.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.npm.babel-worker.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.npm.cli.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.npm.client.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.npm.create.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.npm.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.build-status.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.build.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.builds.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.code-editor.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.common.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.dashboard.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.db-explorer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.inspect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.components.runtimes.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.db.builds.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.db.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.db.explorer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.db.generic.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.db.inspect.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.db.relay-ws.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.main.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.cljs.ui.notifications.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.debug.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.dom.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.esm.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.expo.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.goog.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.insight.remote-ext.cljs.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.insight.ui.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.json.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.keyboard.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.lazy.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.legacy.route.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.markup.css.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.markup.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.markup.react.impl.css.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.markup.react.impl.interop.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.markup.react.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.object.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.react-native.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.react.component.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.remote.runtime.eval-support.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.remote.runtime.writer.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.browser.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.env.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.karma.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.node.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.remote-inject.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.test.workspaces.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.ui.expandable.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.ui.popup.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.ui.position.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.ui.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.util.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/cljs/shadow.xhr.transit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/config.edn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clj-kondo/.cache/v1/lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.shadow-cljs/builds/app/dev/ana/clojure_rum_start/core.cljs.cache.transit.json" beforeDir="false" afterPath="$PROJECT_DIR$/.shadow-cljs/builds/app/dev/ana/clojure_rum_start/core.cljs.cache.transit.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.shadow-cljs/classpath.edn" beforeDir="false" afterPath="$PROJECT_DIR$/.shadow-cljs/classpath.edn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.shadow-cljs/cli-repl.port" beforeDir="false" afterPath="$PROJECT_DIR$/.shadow-cljs/cli-repl.port" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.shadow-cljs/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/.shadow-cljs/server.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.shadow-cljs/server.token" beforeDir="false" afterPath="$PROJECT_DIR$/.shadow-cljs/server.token" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.shadow-cljs/socket-repl.port" beforeDir="false" afterPath="$PROJECT_DIR$/.shadow-cljs/socket-repl.port" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/compiled/cljs-runtime/clojure_rum_start.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/compiled/cljs-runtime/clojure_rum_start.core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/compiled/cljs-runtime/clojure_rum_start.core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/compiled/cljs-runtime/clojure_rum_start.core.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/compiled/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/compiled/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/compiled/manifest.edn" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/compiled/manifest.edn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clojure_rum_start/core.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/clojure_rum_start/core.cljs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,26 +645,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Test Namespace" />
+        <option value="ClojureScript Test Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectId" id="2MAn0glKg4Fmj5Hp4eJQQFrEvWl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/takayukiyamawaki/Documents/programming/clojureScript/clojure-rum-start",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;cursive.last.file.extension./Users/takayukiyamawaki/Documents/programming/clojureScript/clojure-rum-start/src&quot;: &quot;cljs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/takayukiyamawaki/Documents/programming/clojureScript/clojure-rum-start&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
@@ -85,5 +729,16 @@
       <updated>1677219033376</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
