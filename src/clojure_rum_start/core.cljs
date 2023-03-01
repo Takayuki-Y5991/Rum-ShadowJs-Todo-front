@@ -2,10 +2,8 @@
   (:require [clojure.string :as str]
             [rum.core :as rum]))
 
-; TODO DELETE
 (defn create-date []
   (str (.getFullYear (js/Date.)) "-" (.getMonth (js/Date.)) "-" (.getDate(js/Date.))))
-; TODO CARD
 
 
 ( defonce todos ( atom nil))
