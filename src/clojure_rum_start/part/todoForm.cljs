@@ -2,14 +2,14 @@
   (:require [clojure-rum-start.client.client :refer [createTodo]] 
             [rum.core :as rum]))
 
-(rum/defc todo-form [todos-atom set-todos-atom]
+(rum/defc todo-form [todos set-todos]
   (let [new-todo-atom (atom {})]
     [:div.add-content
      [:h3 "ADD TODO"]
      [:form {:on-submit #(do
                            (.preventDefault %)
                            (createTodo @new-todo-atom)
-                           (set-todos-atom (into [] (conj todos-atom @new-todo-atom)))
+                           (set-todos (into [] (conj todos @new-todo-atom)))
                            (reset! new-todo-atom {}))}
       [:span {:style {:margin "0 20px"}} "TODO名: "]
       [:input {:type        :text
