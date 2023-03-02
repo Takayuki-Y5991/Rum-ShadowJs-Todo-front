@@ -4,14 +4,15 @@
 
  :dependencies [[binaryage/devtools "0.9.7"]
                 ;; fork to support react 16
-                [org.roman01la/citrus "3.0.0" :exclusions [rum]] 
-                [rum "0.12.9"]]
+                [org.roman01la/citrus "3.0.0" :exclusions [rum]]
+                [rum "0.12.9"]
+                [org.clojure/core.async "1.6.673"]]
 
  ;; set an nrepl port for connection to a REPL.
  :nrepl        {:port 8777}
 
  :builds
- {:app {:target :browser
+ {:app {:target     :browser
         :output-dir "public/js/compiled"
         :asset-path "/js/compiled"
 
@@ -23,9 +24,9 @@
         ;; before live-reloading any code call this function
         {:before-load clojure-rum-start.core/stop
          ;; after live-reloading finishes call this function
-         :after-load clojure-rum-start.core/start
+         :after-load  clojure-rum-start.core/start
          ;; serve the public directory over http at port 8700
-         :http-root    "public"
-         :http-port    8700
-         :preloads     [devtools.preload]}
+         :http-root   "public"
+         :http-port   8700
+         :preloads    [devtools.preload]}
         }}}

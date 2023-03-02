@@ -1,7 +1,9 @@
 (ns clojure-rum-start.client.client
   (:require [clojure-rum-start.util.common :refer [error-handler]]
-            [clojure-rum-start.util.parser :refer [format-date]]))
-(defn create-todo [todo]
+            [clojure-rum-start.util.parser :refer [format-date]]
+            [clojure.core.async :as async　:refer [<! >! go]]
+            [clojure.string :as s]))
+(defn createTodo [todo]
       (let [url "http://localhost:3000/todo"
             options {:mode    "cors"
                      :method  "POST"
@@ -10,8 +12,7 @@
            (-> (js/fetch url (clj->js options))
                (.catch #(error-handler %)))))
 
-
-(defn update-status [todo id]
+(defn updateStatus [todo id]
       (let [url (str "http://localhost:3000/todo/changeStatus/" id)
             options {
                      :mode    "cors"
@@ -30,10 +31,26 @@
            (-> (js/fetch url (clj->js options))
                (.catch #(error-handler %)))))
 
-(defn fetch-all [todos]
-      (-> (js/fetch "http://localhost:3000/todos" {:mode   "cors"
-                                                   :method "GET"})
-          (.then (fn [response] (.json response)))
-          (.then (fn [json] (let [clj-json (js->clj json :keywordize-keys true)
-                                  todos-with-dates (map #(assoc % :limit_date (format-date (:limit_date %))) clj-json)]
-                                 (reset! todos todos-with-dates))))))
+(defn fetchAll [set-todos-atom]
+     (-> (js/fetch "http://localhost:3000/todos" {:mode   "cors"
+                                                  :method "GET"})
+         (.then (fn [response] (.json response)))
+         (.then (fn [json] (let [clj-json (js->clj json :keywordize-keys true)
+                                 todos-with-dates (map #(assoc % :limit_date (format-date (:limit_date %))) clj-json)]
+                                (set-todos-atom todos-with-dates))))))
+; (defn fetch-all [todos-atom]
+;       (go
+;         (let [response (<! (async/go (js/fetch "http://localhost:3000/todos" {:mode "cors" :method "GET"})))
+;               json (js->clj (js/JSON.parse (;body response)) :keywordize-keys true)
+;               todos-with-dates (map #(assoc % :limit_date (format-date (:limit_date %))) json)]
+;              (reset! todos-atom todos-with-dates))))
+
+
+; (defn fetchAll [set-todos-atom]
+;   (async/go
+;     (let [response (<! (js/fetch "http://localhost:3000/todos" {:mode "cors"
+;                                                                 :method "GET"}))
+;           json (<! (.json response))]
+;       (js/console.log "JSON: " json)
+;       (let [todos-with-dates (map #(assoc % :limit_date (format-date (:limit_date %))) json)]
+;         (set-todos-atom todos-with-dates)))))

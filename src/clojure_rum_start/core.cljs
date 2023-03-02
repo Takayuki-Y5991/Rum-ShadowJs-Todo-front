@@ -1,27 +1,27 @@
 (ns clojure-rum-start.core
-  (:require [clojure-rum-start.client.client :refer [fetch-all]]
-            [clojure-rum-start.part.todoForm :refer [todo-form]]
+  (:require [clojure-rum-start.part.todoForm :refer [todo-form]]
             [clojure-rum-start.part.todoItem :refer [todo-item]]
-            [clojure.string :as str]
+            [clojure-rum-start.client.client :refer [fetchAll]]
             [rum.core :as rum]))
 
-(defonce todos (atom nil))
-
 (rum/defc hello-world []
-          ; React Hooks Settings
-          (rum/use-effect!
-            (fn []
-                (fetch-all todos)
-                (println @todos)
-                ) [@todos])
-          [:div
-           [:div.heading
-            [:h1 "MY TODO"]]
-           (todo-form todos)
-           [:div
-            [:ul.container {:style {:list-style "none"}}
-             (for [todo @todos]
-                  (todo-item todo todos))]]])
+  (let [[todos set-todos] (rum/use-state [])]
+    (rum/use-effect!
+     (fn []
+       (fetchAll (fn [new-todos]
+                   (when-not (= new-todos todos)
+                     (set-todos new-todos))))
+       (println todos))
+     [todos])
+    [:div
+     [:div.heading
+      [:h1 "MY TODO"]]
+     (todo-form todos set-todos)
+     [:div
+      [:ul.container {:style {:list-style "none"}}
+       (for [todo todos]
+         (todo-item todo todos set-todos))]]]))
+
 
 (defn start []
       ;; start is called by init and after code reloading finishes
@@ -38,20 +38,3 @@
 (defn stop []
       ;; stop is called before any code
       (js/console.log "stop"))
-
-; (defn fetch-todos []
-;   (-> (js/fetch  "http://localhost:3000/todos"  {:mode "cors"})
-;       (.then (fn [response] (.json response)))
-;       (.then (fn [json]
-;                (println "Response from server:" json)
-;                (swap! todos assoc (js->clj json :keywordize-keys true))))))
-; (fetch-todos)
-
-; (defn testAPI []
-;   (-> (js/fetch "http://localhost:3000/todos"  {:mode "cors"})
-;       (.then (fn [response] (.json response)))
-;       (.then (fn [json] (reset! todos (js->clj json :keywordize-keys true))))))
-
-; (testAPI)
-;(fetch-all todos)
-

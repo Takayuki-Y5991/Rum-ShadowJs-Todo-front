@@ -1,35 +1,28 @@
 (ns clojure-rum-start.part.todoForm
-  (:require [clojure-rum-start.client.client :refer [create-todo]]
-            [clojure-rum-start.util.generator :refer [create-date]]
+  (:require [clojure-rum-start.client.client :refer [createTodo]] 
             [rum.core :as rum]))
 
-(rum/defc todo-form [todos]
-          (let [[task set-task!] (rum/use-state "")
-                [limit set-limit!] (rum/use-state (create-date))]
-               [:div.add-content
-                [:h3 "ADD TODO"]
-                [:form
-                 [:span {:style {:margin "0 20px"}} "TODO名: "]
-                 [:input {:type        :text
-                          :value       task
-                          :placeholder "Add a new item"
-                          :on-change   #(set-task! (.. % -target -value))}]
-                 [:span {:style {:margin "0 20px"}} "期限 :"]
-                 [:input {:type      :date
-                          :value     limit
-                          :on-change #(set-limit! (.. % -target -value))}]
-                 [:input {:type     :submit
-                          :value    "登録"
-                          :style    {:margin "0 20px"}
-                          :on-click (fn [e]
-                                        (.preventDefault e)
-                                        (let [new-todo {
-                                                        :title      task
-                                                        :limit_date limit}]
-                                             (create-todo new-todo)
-                                             (set-task! "")
-                                             (set-limit! (create-date))
-                                             (reset! todos nil)
-                                             )
-                                        )}]]])
-          )
+(rum/defc todo-form [todos-atom set-todos-atom]
+  (let [new-todo-atom (atom {})]
+    [:div.add-content
+     [:h3 "ADD TODO"]
+     [:form {:on-submit #(do
+                           (.preventDefault %)
+                           (createTodo @new-todo-atom)
+                           (set-todos-atom (into [] (conj todos-atom @new-todo-atom)))
+                           (reset! new-todo-atom {}))}
+      [:span {:style {:margin "0 20px"}} "TODO名: "]
+      [:input {:type        :text
+               :value       (:title @new-todo-atom)
+               :placeholder "Add a new item"
+               :on-change   #(swap! new-todo-atom assoc :title (-> % .-target .-value))}]
+      [:span {:style {:margin "0 20px"}} "期限 :"]
+      [:input {:type      :date
+               :value     (:limit_date @new-todo-atom)
+               :on-change #(swap! new-todo-atom assoc :limit_date (-> % .-target .-value))}]
+      [:input {:type :submit
+               :value    "登録"
+               :style    {:margin "0 20px"}}]]]))
+
+
+
